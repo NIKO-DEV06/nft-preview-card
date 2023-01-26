@@ -120,3 +120,16 @@
 .timeimage {
   margin-right: 0.1rem;
 }
+
+footer p {
+  color: $white;
+  font-size: 0.875rem;
+  text-align: center;
+}
+
+.fm {
+  transition: all 200ms ease-in-out;
+  &:hover {
+    color: $cyan;
+  }
+}
