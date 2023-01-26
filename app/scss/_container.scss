@@ -1,0 +1,122 @@
+.container {
+  &__preview {
+    @include breakpoint-up(large) {
+      margin-top: 9rem;
+      margin-right: auto;
+      margin-left: auto;
+    }
+    background-color: $veryDarkBlueCard;
+    height: 35.125rem;
+    width: 20.4375rem;
+    margin: 3.8125rem 1.5625rem 3.8125rem 2rem;
+    border-radius: 15px;
+    box-shadow: 2px 5px 14px rgba(0, 0, 0, 0.2);
+  }
+
+  &__image {
+    display: inline-block;
+    background-image: url(/images/image-equilibrium.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 17.375rem;
+    width: 17.5rem;
+    margin-top: 1.5625rem;
+    margin-right: 1.4375rem;
+    margin-bottom: 1.8125rem;
+    margin-left: 1.4375rem;
+    border-radius: 15px;
+    transition: all 200ms ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.9;
+      transform: scale(1.05);
+    }
+  }
+
+  &__title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: $white;
+    margin-bottom: 1.5rem;
+    margin-left: 1.4375rem;
+    transition: all 200ms ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+      color: $cyan;
+    }
+  }
+
+  &__description {
+    font-size: 1rem;
+    font-weight: 300;
+    color: $softBlue;
+    margin-left: 1.4375rem;
+    margin-right: 1.4375rem;
+  }
+  &__pricesection {
+    display: flex;
+    gap: 5rem;
+    margin-bottom: 1.5rem;
+  }
+  &__price {
+    margin-top: 1.4375rem;
+    margin-left: 1.4375rem;
+    color: $cyan;
+    font-weight: 700;
+  }
+
+  &__timeleft {
+    margin-top: 1.4375rem;
+    margin-right: 1.4375rem;
+    color: $softBlue;
+    font-weight: 300;
+    justify-content: flex-end;
+  }
+
+  &__line {
+    position: relative;
+    height: 0.9px;
+    // margin-left: 1.4375;
+    opacity: 0.6;
+    background: $softBlue;
+    width: 17.5rem;
+    transform: translateX(1.4375rem);
+  }
+  &__creator {
+    margin-left: 1.4375rem;
+    display: flex;
+    gap: 1.1875rem;
+  }
+  &__creatorimage {
+    background-image: url(/images/image-avatar.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 1px solid $white;
+    border-radius: 50%;
+    height: 2.0625rem;
+    width: 2.0625rem;
+    margin-top: 1rem;
+  }
+  &__creatordetails {
+    font-size: 0.9rem;
+    color: $softBlue;
+    margin-top: 1.6875rem;
+  }
+}
+.creation {
+  color: $white;
+  transition: all 200ms ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    color: $cyan;
+  }
+}
+.ethimage {
+  margin-right: 0.1rem;
+}
+.timeimage {
+  margin-right: 0.1rem;
+}

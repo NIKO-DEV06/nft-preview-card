@@ -1,0 +1,144 @@
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Public Sans", sans-serif;
+  background-color: hsl(217deg, 54%, 11%);
+  overflow-x: hidden;
+}
+body.noscroll {
+  overflow: hidden;
+}
+
+a,
+a:visited,
+a:hover {
+  text-decoration: none;
+}
+
+.container__preview {
+  background-color: hsl(216deg, 50%, 16%);
+  height: 35.125rem;
+  width: 20.4375rem;
+  margin: 3.8125rem 1.5625rem 3.8125rem 2rem;
+  border-radius: 15px;
+  box-shadow: 2px 5px 14px rgba(0, 0, 0, 0.2);
+}
+@media (min-width: 64em) {
+  .container__preview {
+    margin-top: 9rem;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+.container__image {
+  display: inline-block;
+  background-image: url(/images/image-equilibrium.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 17.375rem;
+  width: 17.5rem;
+  margin-top: 1.5625rem;
+  margin-right: 1.4375rem;
+  margin-bottom: 1.8125rem;
+  margin-left: 1.4375rem;
+  border-radius: 15px;
+  transition: all 200ms ease-in-out;
+  cursor: pointer;
+}
+.container__image:hover {
+  opacity: 0.9;
+  transform: scale(1.05);
+}
+.container__title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: hsl(0deg, 0%, 100%);
+  margin-bottom: 1.5rem;
+  margin-left: 1.4375rem;
+  transition: all 200ms ease-in-out;
+  cursor: pointer;
+}
+.container__title:hover {
+  color: hsl(178deg, 100%, 50%);
+}
+.container__description {
+  font-size: 1rem;
+  font-weight: 300;
+  color: hsl(215deg, 51%, 70%);
+  margin-left: 1.4375rem;
+  margin-right: 1.4375rem;
+}
+.container__pricesection {
+  display: flex;
+  gap: 5rem;
+  margin-bottom: 1.5rem;
+}
+.container__price {
+  margin-top: 1.4375rem;
+  margin-left: 1.4375rem;
+  color: hsl(178deg, 100%, 50%);
+  font-weight: 700;
+}
+.container__timeleft {
+  margin-top: 1.4375rem;
+  margin-right: 1.4375rem;
+  color: hsl(215deg, 51%, 70%);
+  font-weight: 300;
+  justify-content: flex-end;
+}
+.container__line {
+  position: relative;
+  height: 0.9px;
+  opacity: 0.6;
+  background: hsl(215deg, 51%, 70%);
+  width: 17.5rem;
+  transform: translateX(1.4375rem);
+}
+.container__creator {
+  margin-left: 1.4375rem;
+  display: flex;
+  gap: 1.1875rem;
+}
+.container__creatorimage {
+  background-image: url(/images/image-avatar.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 1px solid hsl(0deg, 0%, 100%);
+  border-radius: 50%;
+  height: 2.0625rem;
+  width: 2.0625rem;
+  margin-top: 1rem;
+}
+.container__creatordetails {
+  font-size: 0.9rem;
+  color: hsl(215deg, 51%, 70%);
+  margin-top: 1.6875rem;
+}
+
+.creation {
+  color: hsl(0deg, 0%, 100%);
+  transition: all 200ms ease-in-out;
+  cursor: pointer;
+}
+.creation:hover {
+  color: hsl(178deg, 100%, 50%);
+}
+
+.ethimage {
+  margin-right: 0.1rem;
+}
+
+.timeimage {
+  margin-right: 0.1rem;
+}/*# sourceMappingURL=style.css.map */
