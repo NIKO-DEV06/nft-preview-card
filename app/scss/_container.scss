@@ -12,7 +12,6 @@
     border-radius: 15px;
     box-shadow: 2px 5px 14px rgba(0, 0, 0, 0.2);
   }
-
   &__image {
     display: inline-block;
     background-image: url(/images/image-equilibrium.jpg);
@@ -25,13 +24,31 @@
     margin-bottom: 1.8125rem;
     margin-left: 1.4375rem;
     border-radius: 15px;
-    transition: all 200ms ease-in-out;
+  }
+  &__view {
+    position: inline-block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 255, 247, 0.6);
+    border-radius: 15px;
+    opacity: 0;
+    transition: all 300ms ease-in-out;
     cursor: pointer;
 
     &:hover {
-      opacity: 0.9;
-      transform: scale(1.05);
+      opacity: 1;
     }
+  }
+  &__eye {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 7.5rem;
+    margin-left: 7.2rem;
   }
 
   &__title {
